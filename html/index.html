@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/main.css" />
     </head>
 
     <body class="font-mono">
-        <header class="header flex items-center justify-center bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static">
+        <header
+            class="header flex items-center bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static"
+        >
             <nav class="nav min-w-full flex">
                 <ul
-                    class="nav__list flex gap-16 space-between min-w-full justify-center text-green-600 font-semibold items-center text-lg sm:text-xl">
-                    <li class="nav__item"><a href="#" class="nav__link--logo">
-                            <img src="../images/Logo.svg" alt="Logo" class="nav__img--logo hidden md:block w-40 ml-4"></a>
+                    class="nav__list flex gap-16 min-w-full text-green-600 font-semibold items-center text-lg sm:text-xl"
+                >
+                    <li class="nav__item">
+                        <a href="#" class="nav__link--logo">
+                            <img
+                                src="../images/Logo.svg"
+                                alt="Logo"
+                                class="nav__img--logo hidden md:block w-40 ml-4"
+                        /></a>
                     </li>
-                    <li class="nav__item ml-auto"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Training</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Products</a></li>
-                    <li class="nav__item flex flex-nowrap ml-auto items-center gap-4"><a href=""
-                            class="nav__link normal-case text-center sm:uppercase sm:font-bold">Order Now</a>
-                        <a href="" class="nav__link--cart"><img src="../images/Cart.svg" alt="Cart"
-                                class="nav__img--cart w-8 hidden md:block"></a>
+                    <li class="nav__item ml-auto">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Training</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Products</a>
+                    </li>
+                    <li
+                        class="nav__item flex flex-nowrap ml-auto mr-auto md:mr-0 items-center gap-4"
+                    >
+                        <a
+                            href=""
+                            class="nav__link normal-case text-center sm:uppercase sm:font-bold"
+                            >Order Now</a
+                        >
+                        <a href="" class="nav__link--cart"
+                            ><img
+                                src="../images/Cart.svg"
+                                alt="Cart"
+                                class="nav__img--cart w-8 hidden md:block"
+                        /></a>
                     </li>
                 </ul>
             </nav>
         </header>
-    </body>
 
+        <main
+            class="main p-7 bg-green-600 text-gray-300 grid grid-cols-4 grid-rows-5"
+        >
+            <h1
+                class="main__h1 text-6xl mt-10 col-span-2 row-span-3 w-2/3 font-bold mb-16"
+            >
+                Fringe Sport Gym Equipment!
+            </h1>
+            <img
+                src="../images/main--left.jpg"
+                alt="img--left"
+                class="main__img row-span-3 ml-6 opacity-0 md:opacity-100"
+            />
+            <img
+                src="../images/main--right.jpg"
+                alt="img--right"
+                class="main__img row-span-3 opacity-0 md:opacity-100 p-6 ml-6"
+            />
+            <p class="main__p text-5xl col-span-2">Most Durable Equipment</p>
+
+            <img
+                src="../images/main--down.jpg"
+                alt="img--down"
+                class="main__img row-span-2 col-span-2 ml-6 opacity-0 md:opacity-100"
+            />
+            <a
+                href=""
+                class="main__btn--order-now border-0 text-lg md:text-xl bg-gray-300 font-bold uppercase text-green-600 p-3 px-4 text-center self-baseline mt-5 rounded-md mr-auto"
+                >Order Now</a
+            >
+        </main>
+    </body>
 </html>

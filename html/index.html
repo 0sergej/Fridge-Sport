@@ -11,21 +11,21 @@
 
     <body class="font-mono">
         <header
-            class="header flex items-center bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static"
+            class="header flex bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static justify-center"
         >
-            <nav class="nav min-w-full flex">
+            <nav class="nav md:min-w-full flex">
                 <ul
-                    class="nav__list flex gap-16 min-w-full text-green-600 font-semibold items-center text-lg sm:text-xl"
+                    class="nav__list flex gap-10 md:gap-16 md:min-w-full  text-green-600 font-semibold items-center text-lg sm:text-xl"
                 >
-                    <li class="nav__item">
+                    <li class="nav__item md:block hidden">
                         <a href="#" class="nav__link--logo">
                             <img
                                 src="../images/Logo.svg"
                                 alt="Logo"
-                                class="nav__img--logo hidden md:block w-40 ml-4"
+                                class="nav__img--logo w-40 ml-4"
                         /></a>
                     </li>
-                    <li class="nav__item ml-auto">
+                    <li class="nav__item md:ml-auto">
                         <a href="#" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
@@ -35,11 +35,11 @@
                         <a href="" class="nav__link">Products</a>
                     </li>
                     <li
-                        class="nav__item flex flex-nowrap ml-auto mr-auto md:mr-0 items-center gap-4"
+                        class="nav__item flex md:flex-nowrap md:ml-auto md:mr-6 items-center md:gap-4"
                     >
                         <a
                             href=""
-                            class="nav__link normal-case text-center sm:uppercase sm:font-bold"
+                            class="nav__link normal-case md:text-center sm:uppercase sm:font-bold "
                             >Order Now</a
                         >
                         <a href="" class="nav__link--cart"
@@ -54,35 +54,30 @@
         </header>
 
         <main
-            class="main p-7 bg-green-600 text-gray-300 grid grid-cols-4 grid-rows-5"
+            class="main p-7 bg-green-600 text-gray-300 grid md:grid-cols-4 md:grid-rows-3 grid-cols-2 grid-rows-2"
         >
             <h1
-                class="main__h1 text-6xl mt-10 col-span-2 row-span-3 w-2/3 font-bold mb-16"
+                class="main__h1 text-6xl mt-10 xl:text-8xl md:text-7xl col-span-2 md:row-span-2 font-bold"
             >
                 Fringe Sport Gym Equipment!
             </h1>
             <img
                 src="../images/main--left.jpg"
                 alt="img--left"
-                class="main__img row-span-3 ml-6 opacity-0 md:opacity-100"
+                class="main__img row-span-3 hidden md:block  ml-6 opacity-0 md:opacity-100 px-6 min-w-full"
             />
             <img
-                src="../images/main--right.jpg"
+                src="../images/main--left.jpg"
                 alt="img--right"
-                class="main__img row-span-3 opacity-0 md:opacity-100 p-6 ml-6"
+                class="main__img hidden md:block row-span-3 opacity-0 md:opacity-100 px-6 min-w-full"
             />
-            <p class="main__p text-5xl col-span-2">Most Durable Equipment</p>
-
-            <img
-                src="../images/main--down.jpg"
-                alt="img--down"
-                class="main__img row-span-2 col-span-2 ml-6 opacity-0 md:opacity-100"
-            />
+            <section class="hero--button-section sm:col-auto 1 col-span-2">
+            <p class="main__p text-5xl xl:text-6xl mb-10">Most Durable Equipment</p>
             <a
                 href=""
-                class="main__btn--order-now border-0 text-lg md:text-xl bg-gray-300 font-bold uppercase text-green-600 p-3 px-4 text-center self-baseline mt-5 rounded-md mr-auto col-span-2"
+                class="main__btn--order-now border-0 text-lg md:text-xl bg-gray-300 font-bold uppercase text-green-600 p-3 px-4  self-end mt-5 rounded-md"
                 >Order Now</a
-            >
+            ></section>
         </main>
     </body>
 </html>

@@ -10,8 +10,25 @@
         <link rel="stylesheet" href="../css/main.css">
     </head>
 
-    <body>
-        <h1 class="h1 underline">Hello World!!</h1>
+    <body class="font-mono">
+        <header class="header flex items-center justify-center bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static">
+            <nav class="nav min-w-full flex">
+                <ul
+                    class="nav__list flex gap-16 space-between min-w-full justify-center text-green-600 font-semibold items-center text-lg sm:text-xl">
+                    <li class="nav__item"><a href="#" class="nav__link--logo">
+                            <img src="../images/Logo.svg" alt="Logo" class="nav__img--logo hidden md:block w-40 ml-4"></a>
+                    </li>
+                    <li class="nav__item ml-auto"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Training</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Products</a></li>
+                    <li class="nav__item flex flex-nowrap ml-auto items-center gap-4"><a href=""
+                            class="nav__link normal-case text-center sm:uppercase sm:font-bold">Order Now</a>
+                        <a href="" class="nav__link--cart"><img src="../images/Cart.svg" alt="Cart"
+                                class="nav__img--cart w-8 hidden md:block"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </body>
 
 </html>

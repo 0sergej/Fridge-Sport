@@ -10,6 +10,7 @@
     </head>
     <body class="font-mono bg-gray-300">
         <header
+            aria-label="header"
             class="header flex bg-gray-300 py-5 px-5 md:py-2 fixed bottom-0 right-0 left-0 md:static justify-center"
         >
             <nav class="nav md:min-w-full flex">
@@ -52,20 +53,37 @@
             </nav>
         </header>
 
-        <main class="main" aria-label="main content">
-            <h1 class="main__h1">Fringe Sport Gym Equipment!</h1>
-            <img
-                src="../images/main--left.jpg"
-                alt="img--left"
-                class="main__img"
-            />
-            <img
-                src="../images/main--left.jpg"
-                alt="img--right"
-                class="main__img"
-            />
-            <p class="main__p">Most Durable Equipment</p>
-            <a href="" class="main__link--order-now">Order Now</a>
+        <main
+            class="main bg-green-600 border-0 rounded-bl-[1.5rem] rounded-br-[1.5rem] text-gray-300 flex flex-wrap p-10 pr-0"
+            aria-label="main content"
+        >
+        <section class="main--text max-w-[50%]">
+            <h1
+                class="main__h1 text-5xl lg:text-7xl font-bold mt-5 md:text-6xl"
+            >
+                Fringe Sport Gym Equipment!
+            </h1>
+                <p class="main__p text-4xl md:text-5xl md:mt-40 mt-20 mb-10">Most Durable Equipment</p>
+                <a
+                    href=""
+                    class="main__link--order-now border-0 bg-gray-300 text-green-600 text-center px-3 py-2 font-bold text-xl rounded-md"
+                    >Order Now</a
+                >
+        </section>
+            <section
+                class="main__img max-w-[50%] flex text-center ml-auto mr-auto"
+            >
+                <img
+                    src="../images/main--left.jpg"
+                    alt="img--left"
+                    class="main__img sm:block hidden"
+                />
+                <img
+                    src="../images/Main--right.jpg"
+                    alt="img--right"
+                    class="main__img pl-10 hidden xl:block"
+                />
+            </section>
         </main>
 
         <section class="about" aria-label="about us">

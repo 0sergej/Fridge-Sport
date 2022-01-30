@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,291 +9,220 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="../css/main.css" />
     </head>
-    <body class="font-mono bg-gray-300">
-        <header
-            aria-label="header"
-            class="header flex bg-gray-300 py-5 px-5 md:py-2 outline-4 outline outline-green-600 md:outline-0 fixed bottom-0 right-0 left-0 md:static justify-center z-10"
-        >
+
+    <body class="font-mono bg-gray-300 overflow-x-hidden">
+        <header aria-label="header"
+            class="header flex bg-gray-300 py-5 px-5 md:py-2 outline-4 outline outline-green-600 md:outline-0 fixed bottom-0 right-0 left-0 md:static justify-center z-10">
             <nav class="nav md:min-w-full flex">
                 <ul
-                    class="nav__list flex gap-10 md:gap-16 md:min-w-full text-green-600 font-semibold items-center text-lg sm:text-xl"
-                >
+                    class="nav__list flex gap-10 md:gap-16 md:min-w-full text-green-600 font-semibold items-center text-lg sm:text-xl">
                     <li class="nav__item md:block hidden">
                         <a href="#" class="nav__link--logo">
-                            <img
-                                src="../images/Logo.svg"
-                                alt="Logo"
-                                class="nav__img--logo w-40 ml-4"
-                        /></a>
+                            <img src="../images/Logo.svg" alt="Logo" class="nav__img--logo w-40 ml-4" /></a>
                     </li>
                     <li class="nav__item md:ml-auto">
                         <a href="#" class="nav__link hover:underline">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link hover:underline"
-                            >Training</a
-                        >
+                        <a href="" class="nav__link hover:underline">Training</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link hover:underline"
-                            >Products</a
-                        >
+                        <a href="" class="nav__link hover:underline">Products</a>
                     </li>
-                    <li
-                        class="nav__item flex md:flex-nowrap md:ml-auto md:mr-6 items-center md:gap-4"
-                    >
-                        <a
-                            href=""
-                            class="nav__link normal-case md:text-center sm:uppercase sm:font-bold hover:underline"
-                            >Order Now</a
-                        >
-                        <a href="" class="nav__link--cart"
-                            ><img
-                                src="../images/Cart.svg"
-                                alt="Cart"
-                                class="nav__img--cart w-8 hidden md:block"
-                        /></a>
+                    <li class="nav__item flex md:flex-nowrap md:ml-auto md:mr-6 items-center md:gap-4">
+                        <a href=""
+                            class="nav__link normal-case md:text-center sm:uppercase sm:font-bold hover:underline">Order
+                            Now</a>
+                        <a href="" class="nav__link--cart"><img src="../images/Cart.svg" alt="Cart"
+                                class="nav__img--cart w-8 hidden md:block" /></a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <main
-            class="main h-[80vh] bg-green-600 absolute left-0 right-0 2xl:left-[10%] 2xl:right-[10%] rounded-b-[1rem]"
-            aria-label="main content"
-        >
-            <section
-                class="main--subsection text-gray-300 flex flex-wrap p-10 pr-0 text-center"
-                aria-label="main subsection"
-            >
+        <main aria-label="main content"
+            class="main h-[90vh] 2xl:w-[80vw] bg-green-600 relative left-0 2xl:left-[10%] rounded-b-[1rem]">
+            <section aria-label="main subsection"
+                class="main--subsection text-gray-300 flex flex-wrap p-10 text-center">
                 <section class="main--text md:max-w-[50%]">
-                    <h1
-                        class="main__h1 text-5xl lg:text-7xl font-bold mt-5 md:text-6xl !leading-tight"
-                    >
+                    <h1 class="main__h1 text-5xl lg:text-7xl font-bold mt-5 md:text-6xl !leading-tight">
                         Fringe Sport Gym Equipment!
                     </h1>
-                    <p
-                        class="main__p text-4xl md:text-5xl md:mt-40 mt-20 mb-10 !leading-tight"
-                    >
+                    <p class="main__p text-4xl md:text-5xl md:mt-40 mt-20 mb-10 !leading-tight">
                         Most Durable Equipment
                     </p>
-                    <a
-                        href=""
-                        class="main__link--order-now bg-gray-300 text-green-600 text-center px-3 py-2 font-bold text-xl rounded-md"
-                        >Order Now</a
-                    >
+                    <a href=""
+                        class="main__link--order-now bg-gray-300 text-green-600 text-center px-3 py-2 font-bold text-xl rounded-md">Order
+                        Now</a>
                 </section>
-                <section
-                    class="main__img max-w-[50%] md:flex text-center ml-auto mr-auto hidden"
-                >
-                    <img
-                        src="../images/main--left.jpg"
-                        alt="img--left"
-                        class="main__img sm:block hidden rounded-[1rem] aspect-[275/557]"
-                    />
-                    <img
-                        src="../images/Main--right.jpg"
-                        alt="img--right"
-                        class="main__img ml-10 hidden xl:block rounded-[1rem] aspect-[275/557]"
-                    />
-                </section>
-            </section>
-            <section
-                aria-label="about us"
-                class="about relative left-[10%] w-[80%] flex flex-wrap rounded-[1rem] top-[7%] bg-gray-300 py-5 px-10 justify-center md:text-lg"
-            >
-                <h1
-                    class="about__h1 w-full mb-8 text-center text-4xl text-green-600 font-medium"
-                >
-                    About Us
-                </h1>
-                <section
-                    class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600"
-                >
-                    <h2 class="about__title md:text-2xl text-xl mb-3">
-                        Why Choose Us?
-                    </h2>
-                    <p class="about__p">
-                        Reliable,<br />
-                        Quality to Price ratio,<br />
-                        Well known Brand
-                    </p>
-                </section>
-                <section
-                    class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600"
-                >
-                    <h2 class="about__title md:text-2xl text-xl mb-3">
-                        Where Are We
-                    </h2>
-                    <p class="about__p">
-                        20+ retail Stores,<br />
-                        On the Web, <br />
-                        Sponsored Gyms
-                    </p>
-                </section>
-                <section
-                    class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600"
-                >
-                    <h2 class="about__title md:text-2xl text-xl mb-3">
-                        Who Are We?
-                    </h2>
-                    <p class="about__p">
-                        New,<br />
-                        Modern,<br />
-                        Innovating
-                    </p>
-                </section>
-                <section
-                    class="about__card mr-5 mb-5 p-3 text-center items-end hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600"
-                >
-                    <h2 class="about__title md:text-2xl text-xl mb-3">
-                        Our Plans
-                    </h2>
-                    <p class="about__p">Bring fitness to You</p>
+                <section class="main__img max-w-[50%] md:flex text-center ml-auto mr-auto hidden">
+                    <img src="../images/main--left.jpg" alt="img--left"
+                        class="main__img sm:block hidden rounded-[1rem] aspect-[275/557]" />
+                    <img src="../images/Main--right.jpg" alt="img--right"
+                        class="main__img ml-10 hidden xl:block rounded-[1rem] aspect-[275/557]" />
                 </section>
             </section>
         </main>
 
-        <section class="train" aria-label="train">
-            <h1 class="train__title">Train Different</h1>
-            <p class="train__text">
-                We can make a perfect program that souits YOU the best
-            </p>
-            <section class="full__title" aria-label="full">
-                <h2 class="full__title">Full Body</h2>
-                <p class="full__text">Train you full Body</p>
-                <p class="full__text">
-                    Best suited for those who don’t waisted time
+        <section aria-label="about us"
+            class="about relative left-[15%] bottom-80 md:bottom-40 w-[70%] flex flex-wrap rounded-[1rem] bg-gray-300 py-5 px-10 justify-center md:text-lg outline outline-green-600  hover:scale-110 ease-in-out duration-150">
+            <h1 class="about__h1 w-full mb-8 text-center text-4xl text-green-600 font-medium">
+                About Us
+            </h1>
+            <section
+                class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600">
+                <h2 class="about__title md:text-2xl text-xl mb-3">
+                    Why Choose Us?
+                </h2>
+                <p class="about__p">
+                    Reliable,<br />
+                    Quality to Price ratio,<br />
+                    Well known Brand
                 </p>
-                <img src="../images/Full.png" alt="" class="full__img" />
             </section>
-            <section class="split" aria-label="split">
-                <h2 class="split__title">Split training</h2>
-                <p class="split__text">Split your training into sections</p>
-                <p class="split__text">
-                    Just for those who want most out of their training
+            <section
+                class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600">
+                <h2 class="about__title md:text-2xl text-xl mb-3">
+                    Where Are We
+                </h2>
+                <p class="about__p">
+                    20+ retail Stores,<br />
+                    On the Web, <br />
+                    Sponsored Gyms
                 </p>
-                <img src="../images/Split.png" alt="" class="split__img" />
             </section>
-            <p class="train__text--end">
-                Create Your own training that fits your goals
-            </p>
-            <a href="" class="train__link">Create Now</a>
+            <section
+                class="about__card mr-5 mb-5 p-3 text-center hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600">
+                <h2 class="about__title md:text-2xl text-xl mb-3">
+                    Who Are We?
+                </h2>
+                <p class="about__p">
+                    New,<br />
+                    Modern,<br />
+                    Innovating
+                </p>
+            </section>
+            <section
+                class="about__card mr-5 mb-5 p-3 text-center items-end hover:font-semibold border-4 border-green-600 rounded-[1rem] hover:bg-green-600 hover:text-gray-300 text-green-600">
+                <h2 class="about__title md:text-2xl text-xl mb-3">Our Plans</h2>
+                <p class="about__p">Bring fitness to You</p>
+            </section>
         </section>
 
-        <section class="products" aria-label="products">
-            <h1 class="products__title">Featured products</h1>
-            <section class="featured" aria-label="featured products">
-                <img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                />
-                <img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg"
-                    alt=""
-                    class="featured__img"
-                />
+        <section aria-label="train"
+            class="train relative bottom-32 md:bottom-0 bg-green-600 rounded-[1rem] pt-5 p-10 text-gray-300 text-center">
+            <h1 class="train__title  text-5xl font-semibold my-10">Train Different</h1>
+            <p class="train__text md:text-3xl text-2xl leading-normal mx-[20%]">
+                We can make a perfect program that souits YOU the best
+            </p>
+            <section aria-label="full body training" class="full  flex items-center justify-center pt-10">
+                <section
+                    class="full--text flex flex-col  justify-center px-[5%]  text-green-600 bg-gray-300 h-80 md:rounded-r-none rounded-[1rem]">
+                    <h2 class="full__title text-3xl ">Full Body</h2>
+                    <p class="full__text font-medium text-xl mt-10 mb-5">Train you full Body</p>
+                    <p class="full__text">
+                        Best suited for those who don’t waisted time
+                    </p>
+                </section>
+                <img src="../images/Full.png" alt="full body" class="full__img max-w-[50%]" />
             </section>
-            <h2 class="train__subtitle">More From Us</h2>
-            <section class="more" aria-label="more products">
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
-                <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
-                </div>
+            <section aria-label="split training" class="split  flex flex-row-reverse items-center justify-center pt-10">
+                <section
+                    class="full--text flex flex-col  justify-center px-[5%]  text-green-600 bg-gray-300 h-80 md:rounded-r-none rounded-[1rem]">
+                    <h2 class="full__title text-3xl ">Split training</h2>
+                    <p class="full__text font-medium text-xl mt-10 mb-5">Split your training into sections</p>
+                    <p class="full__text">Just for those who want most out of their training</p>
+                </section>
+                <img src="../images/Split.png" alt="split" class="full__img max-w-[50%]" />
             </section>
         </section>
+
+            <section class="products" aria-label="products">
+                <h1 class="products__title">Featured products</h1>
+                <section class="featured" aria-label="featured products">
+                    <img src="" alt="" class="featured__img" /><img src="../images/Item.svg" alt=""
+                        class="featured__img" /><img src="" alt="" class="featured__img" /><img src="../images/Item.svg"
+                        alt="" class="featured__img" /><img src="" alt="" class="featured__img" /><img
+                        src="../images/Item.svg" alt="" class="featured__img" /><img src="" alt=""
+                        class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" /><img src=""
+                        alt="" class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" />
+                    <img src="" alt="" class="featured__img" /><img src="../images/Item.svg" alt=""
+                        class="featured__img" /><img src="" alt="" class="featured__img" /><img src="../images/Item.svg"
+                        alt="" class="featured__img" /><img src="" alt="" class="featured__img" /><img
+                        src="../images/Item.svg" alt="" class="featured__img" /><img src="" alt=""
+                        class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" /><img src=""
+                        alt="" class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" />
+                </section>
+                <h2 class="train__subtitle">More From Us</h2>
+                <section class="more" aria-label="more products">
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                    <div class="item">
+                        <img src="../images/Item.svg" alt="" class="more__img" />
+                        <p__item>Item Name</p__item>
+                    </div>
+                </section>
+            </section>
+
+            <footer class="h-[68px] bg-red-400 md:hidden block">easter egg</footer>
     </body>
+
 </html>

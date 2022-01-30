@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="../js/featuredProduct.js" defer></script>
         <link rel="stylesheet" href="../css/main.css" />
     </head>
 
@@ -111,7 +112,7 @@
 
         <section aria-label="train"
             class="train relative bottom-32 md:bottom-0 bg-green-600 rounded-[1rem] pt-5 p-10 text-gray-300 text-center">
-            <h1 class="train__title  text-5xl font-semibold my-10">Train Different</h1>
+            <h1 class="train__title text-4xl md:text-6xl font-semibold my-10">Train Different</h1>
             <p class="train__text md:text-3xl text-2xl leading-normal mx-[20%]">
                 We can make a perfect program that souits YOU the best
             </p>
@@ -143,87 +144,135 @@
             </section>
         </section>
 
-        <section class="products" aria-label="products">
-            <h1 class="products__title">Featured products</h1>
-            <section class="featured" aria-label="featured products">
-                <img src="" alt="" class="featured__img" /><img src="../images/Item.svg" alt=""
-                    class="featured__img" /><img src="" alt="" class="featured__img" /><img src="../images/Item.svg"
-                    alt="" class="featured__img" /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg" alt="" class="featured__img" /><img src="" alt=""
-                    class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" /><img src=""
-                    alt="" class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" />
-                <img src="" alt="" class="featured__img" /><img src="../images/Item.svg" alt=""
-                    class="featured__img" /><img src="" alt="" class="featured__img" /><img src="../images/Item.svg"
-                    alt="" class="featured__img" /><img src="" alt="" class="featured__img" /><img
-                    src="../images/Item.svg" alt="" class="featured__img" /><img src="" alt=""
-                    class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" /><img src=""
-                    alt="" class="featured__img" /><img src="../images/Item.svg" alt="" class="featured__img" />
+        <section aria-label="products"
+            class="md:bottom-0 relative bottom-24 left-[10%] max-w-[80%] text-center p-10 pb-16 md:pb-0">
+            <h1 class="products__title text-green-600 text-6xl font-semibold mt-10 mb-16 md:block hidden">
+                Featured products</h1>
+            <h1 class="products__title text-green-600 text-4xl  font-semibold  md:hidden block">
+                Products</h1>
+
+            <section aria-label="featured products"
+                class="featured bg-green-600 rounded-[1rem] pt-3 md:flex hidden text-gray-300">
+                <section class="featured__section--1 gap-10 ml-5 my-5 flex justify-center">
+                    <div class="flex flex-col h-full">
+                        <img src="../images/products/Hat.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl">Hat</p>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <img src="../images/products/Hoodie.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl">Hoodie</p>
+                    </div>
+                    <div class="flex flex-col h-full mr-5">
+                        <img src="../images/products/T-shirt.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl">T-shirt</p>
+                    </div>
+                </section>
+                <section class="featured__section--2 gap-10 ml-5 my-5 flex justify-center">
+                    <div class="flex flex-col h-full">
+                        <img src="../images/products/Blur__T-shirt.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl">Socks</p>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <img src="../images/products/Straps.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl ">Straps</p>
+                    </div>
+                    <div class="flex flex-col h-full mr-5">
+                        <img src="../images/products/Wraps.png" alt="featured product" class="featured__img" />
+                        <p class="text-xl">Wraps</p>
+                    </div>
+                </section>
+
+                <button class="btnNext absolute right-5 text-5xl self-center bg-green-600 rounded-md pb-1">>
+                </button>
             </section>
-            <h2 class="train__subtitle">More From Us</h2>
-            <section class="more" aria-label="more products">
+        </section>
+
+        <section aria-label="more products" class="md:bottom-0 relative bottom-24 md:left-[10%] md:max-w-[80%]">
+            <h2
+                class="train__subtitle text-green-600 text-center text-4xl md:text-6xl font-semibold md:mt-10 md:mb-16 md:block hidden">
+                More From Us</h2>
+
+            <section
+                class="grid grid-cols-2 lg:grid-cols-4 mx-16 mb-0 md:mb-10 py-4 px-4 text-center bg-green-600 text-gray-300 rounded-[1rem]">
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
                 <div class="item">
-                    <img src="../images/Item.svg" alt="" class="more__img" />
-                    <p__item>Item Name</p__item>
+                    <img src="../images/Item.svg" alt="product image"
+                        class="more__img md:max-h-full max-h-[80%] mx-auto" />
+                    <p class="relative bottom-5 text-lg md:text-xl">Item Name</p>
                 </div>
             </section>
         </section>

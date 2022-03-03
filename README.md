@@ -1,1 +1,3 @@
-# Tailwind
+# Fridge-Sport
+
+Learning TailwindCSS
